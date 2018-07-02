@@ -16,8 +16,6 @@ RUN \
 ENV KIBANA_CONFIG=/opt/kibana/config/kibana.yml \
     MARVEL_SUPPORT=false
 
-COPY container-files /
-
 EXPOSE 5601
 
 ENTRYPOINT ["/bootstrap.sh"]
